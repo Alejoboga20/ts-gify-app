@@ -1,3 +1,10 @@
+import { SearchBar } from '@/components';
+import { BaseLayout } from '@/layout';
+
 export const App = () => {
-  return <div>App</div>;
+  return (
+    <BaseLayout>
+      <SearchBar />
+    </BaseLayout>
+  );
 };
