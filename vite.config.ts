@@ -8,7 +8,7 @@ export default defineConfig({
   build: {
     chunkSizeWarningLimit: 1000,
   },
-  define: { global: {} },
+  define: { global: 'globalThis' },
   resolve: {
     alias: {
       './runtimeConfig': './runtimeConfig.browser',
