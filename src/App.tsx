@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { GifGrid, SearchBar } from '@/components';
+import { CategoryTabs, GifGrid, SearchBar } from '@/components';
 import { BaseLayout } from '@/layout';
 
 export const App = () => {
@@ -12,9 +12,15 @@ export const App = () => {
     setCategories((prevCat) => [category, ...prevCat]);
   };
 
+  const onDeleteCategory = (category: string) => {
+    const newCategories = categories.filter((cat) => cat !== category);
+    setCategories(newCategories);
+  };
+
   return (
     <BaseLayout>
       <SearchBar onAddNewCategory={onAddNewCategory} />
+      <CategoryTabs categories={categories} onDeleteCategory={onDeleteCategory} />
       {categories.map((category) => (
         <GifGrid key={category} gifCategory={category} />
       ))}
