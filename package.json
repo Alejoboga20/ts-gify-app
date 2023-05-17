@@ -9,7 +9,8 @@
     "lint": "eslint . --ext .js,.ts,.tsx,.jsx",
     "preview": "vite preview",
     "prepare": "husky install",
-    "test": "vitest"
+    "test:watch": "vitest",
+    "test": "vitest run"
   },
   "dependencies": {
     "axios": "^0.26.0",
