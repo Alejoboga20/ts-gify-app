@@ -18,7 +18,7 @@ export const SearchBar = ({ onAddNewCategory }: SearchBarProps) => {
   };
 
   return (
-    <form className='flex flex-col gap-2 sm:flex-row' onSubmit={onSubmit}>
+    <form className='mb-4 flex flex-col gap-2 sm:flex-row' onSubmit={onSubmit}>
       <label htmlFor={id} className='sr-only' />
       <input
         id='id'
