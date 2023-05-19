@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 /* eslint-disable camelcase */
-import { useFetchGifs } from '@/hooks';
+import { useFetchGifs } from '@/hooks/useFetchGifs';
 
 import { GifGridItem } from '..';
 
