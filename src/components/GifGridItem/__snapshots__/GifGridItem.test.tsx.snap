@@ -1,0 +1,15 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`GifGridItem Tests > should match the component snapshot 1`] = `
+<div>
+  <div
+    class="h-full w-full rounded border border-neutral-200 p-2"
+  >
+    <img
+      alt="test title"
+      class="h-[200px] w-full"
+      src="https://localhost.com/testUrl.png"
+    />
+  </div>
+</div>
+`;
